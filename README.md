@@ -16,7 +16,7 @@
 ----------
 
 
-### 产品依赖于:
+## 产品依赖于:
  - [Python][1]
  - [Wxpy][2]
 
@@ -52,14 +52,48 @@
 	import random
 	import os
 	import ctypes
-	重要：其中 wxpy 模块是本项目以及后续项目中很重要的模块，就是因为这个开源项目，我们才能使其与微信产生交互。
+	
+	**重要：**其中 wxpy 模块是本项目以及后续项目中很重要的模块，就是因为这个开源项目，我们才能使其与微信产生交互。
     
     # 运行
 	直接点击文件【PreventWithdrawal】或者在目录中打开cmd:PreventWithdrawal.py，运行即可
 
+## 代码说明
 
+获取你要检测的群对象，如果你想监听所有对象，则不需要；
+将撤回的消息 转发到特定的群里，以供再其他微信查看，可以是单个好友或者文件传输助手
+
+```python
+Test = bot.groups().search(u'C.B.M电子竞技俱乐部') 
+
+recallNotice = ensure_one(bot.groups().search('C.B.M电子竞技俱乐部')) 
+```
+
+注册事件，所有群的消息
+
+```python
+@bot.register(Group)
+```
+
+撤回类型
+
+```python
+# 文本 TEXT = 'Text'
+# 位置 MAP = 'Map' 1
+# 名片 CARD = 'Card' 2
+# 分享 SHARING = 'Sharing' 3
+# 图片 PICTURE = 'Picture'  4
+# 语音 RECORDING = 'Recording' 5
+# 文件 ATTACHMENT = 'Attachment' 6
+# 视频 VIDEO = 'Video' 7
+```
+
+## 效果展示
+ 
+![效果展示][4]
 
 
 [1]:(https://www.python.org/)
 [2]:(https://wxpy.readthedocs.io/zh/latest/)
 [3]:(https://www.runoob.com/python/python-install.html)
+[4]:(http://tc.lihail.cn/微信截图_20191104145059.png)
