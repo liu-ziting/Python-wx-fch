@@ -1,4 +1,4 @@
-# python+wxpy 进行微信防撤回的监听-wx-fch
+# 利用python进行微信防撤回的监听
 
 ## 项目介绍
 
@@ -22,7 +22,7 @@
 
 ## 项目运行
 	# 安装Python环境
-	[环境搭建教程][3]
+	可百度一下相关教程，在这不做说明
 
     # 克隆到本地
     git clone https://github.com/liu-ziting/python-wx-fch.git
@@ -53,10 +53,11 @@
 	import os
 	import ctypes
 	
-	**重要：**其中 wxpy 模块是本项目以及后续项目中很重要的模块，就是因为这个开源项目，我们才能使其与微信产生交互。
+	重要：其中 wxpy 模块是本项目以及后续项目中很重要的模块，就是因为这个开源项目，我们才能使其与微信产生交互。
     
     # 运行
-	直接点击文件【PreventWithdrawal】或者在目录中打开cmd:PreventWithdrawal.py，运行即可
+	 
+	直接点击文件PreventWithdrawal或者在目录中打开cmd:PreventWithdrawal.py，运行即可。
 
 ## 代码说明
 
@@ -90,10 +91,9 @@ recallNotice = ensure_one(bot.groups().search('C.B.M电子竞技俱乐部'))
 
 ## 效果展示
  
-![效果展示][4]
+![微信防撤回截图](http://tc.lihail.cn/wxfch.png)
 
 
 [1]:(https://www.python.org/)
 [2]:(https://wxpy.readthedocs.io/zh/latest/)
 [3]:(https://www.runoob.com/python/python-install.html)
-[4]:(http://tc.lihail.cn/微信截图_20191104145059.png)
