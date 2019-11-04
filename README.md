@@ -93,7 +93,6 @@ recallNotice = ensure_one(bot.groups().search('C.B.M电子竞技俱乐部'))
  
 ![微信防撤回截图](http://tc.lihail.cn/wxfch.png)
 
-
-[1]:(https://www.python.org/)
-[2]:(https://wxpy.readthedocs.io/zh/latest/)
-[3]:(https://www.runoob.com/python/python-install.html)
+  [1]:https://www.python.org/
+  [2]:https://wxpy.readthedocs.io/zh/latest/
+  [3]:https://www.runoob.com/python/python-install.html
